@@ -156,6 +156,7 @@ void            idtinit(void);
 extern uint     ticks;
 void            tvinit(void);
 extern struct spinlock tickslock;
+extern int      mappages(pde_t*, void*, uint, uint, int);
 
 // uart.c
 void            uartinit(void);
